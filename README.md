@@ -57,16 +57,16 @@ pip install -r requirements.txt
 ### FME Input Format
 two input, event sac file and catalog
 
-**1. sac file**
+**1. sac file**<br />
 file root: FME/temp_01_data_process/event_data/eventID/*<br />
 sac file name: {net}.{station_name}.{seismometer_type}{component}.{location}.sac<br />
 sac[0].stats['sampling_rate']: Data sampling rate(set 100Hz)<br />
 sac[0].data: Instrument waveform data<br />
 
-**2. Dataset_info.csv**
+**2. Dataset_info.csv**<br />
 file root: FME/<br />
 csv file name: Dataset_info.csv<br />
-**Columns**
+**Columns**<br />
 eventID: Custom event name.<br />
 station_name: Station name, same as sac file name.<br />
 origin_time: The start time of the earthquake rupture.<br />
