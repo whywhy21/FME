@@ -58,30 +58,30 @@ pip install -r requirements.txt
 two input, event sac file and catalog
 
 **1. sac file**
-file root: FME/temp_01_data_process/event_data/eventID/*
-sac file name: {net}.{station_name}.{seismometer_type}{component}.{location}.sac
-sac[0].stats['sampling_rate']: Data sampling rate(set 100Hz)
-sac[0].data: Instrument waveform data
+file root: FME/temp_01_data_process/event_data/eventID/*<br />
+sac file name: {net}.{station_name}.{seismometer_type}{component}.{location}.sac<br />
+sac[0].stats['sampling_rate']: Data sampling rate(set 100Hz)<br />
+sac[0].data: Instrument waveform data<br />
 
 **2. Dataset_info.csv**
-file root: FME/
-csv file name: Dataset_info.csv
+file root: FME/<br />
+csv file name: Dataset_info.csv<br />
 **Columns**
-eventID: Custom event name.
-station_name: Station name, same as sac file name.
-origin_time: The start time of the earthquake rupture.
-start_time: The start time of the waveform.
-channel_name: Seismometer type and component.
-network: The network to which the instrument belongs.
-sta_longitude, stasta_latitude: Etation longitude and latitude.
-ev_longitude, ev_latitude: Event longitude and latitude.
-E_P_idx, N_P_idx, Z_P_idx: P arrival index(calculate) for each component.
-E_shift(s), N_shift(s), Z_shift(s): For each event, align the waveform data by shifting each station's waveform according to the time difference from the earliest start time.
-sampling_rate: seismometer sampling rate(set 100Hz).
-Z_npts, N_npts, E_npts: Samples number for each component.
-epi_dist: epicenter distance for station location.
-hypo_dist: hypocenter distance for station location.
-magnitude: Tawain local magnitude for each event.
+eventID: Custom event name.<br />
+station_name: Station name, same as sac file name.<br />
+origin_time: The start time of the earthquake rupture.<br />
+start_time: The start time of the waveform.<br />
+channel_name: Seismometer type and component.<br />
+network: The network to which the instrument belongs.<br />
+sta_longitude, stasta_latitude: Etation longitude and latitude.<br />
+ev_longitude, ev_latitude: Event longitude and latitude.<br />
+E_P_idx, N_P_idx, Z_P_idx: P arrival index(calculate) for each component.<br />
+E_shift(s), N_shift(s), Z_shift(s): For each event, align the waveform data by shifting each station's waveform according to the time difference from the earliest start time.<br />
+sampling_rate: seismometer sampling rate(set 100Hz).<br />
+Z_npts, N_npts, E_npts: Samples number for each component.<br />
+epi_dist: epicenter distance for station location.<br />
+hypo_dist: hypocenter distance for station location.<br />
+magnitude: Tawain local magnitude for each event.<br />
 
 ### Run template codes
 In this repository, we provide four template scripts:<br />
