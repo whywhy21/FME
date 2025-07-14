@@ -33,8 +33,6 @@ pip install -r requirements.txt
 
 ```bash
 .
-├── temp_00_generate_info                 ### *Temp00. Integration of station and earthquake data*
-│   └── P01_dataset_info.py               # perform real-time integration of station and earthquake data
 ├── temp_01_data_processing               ### *Temp01. Using Sac files to create a dataset of magnitude estmation*
 │   ├── P01_by_Factor.py                  # correct the raw data (counts) to m/s² and save as npy files
 │   └── P02_create_dataset.py             # integrate data from various earthquake events and build a dataset
