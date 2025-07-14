@@ -73,7 +73,7 @@ origin_time: The start time of the earthquake rupture.<br />
 start_time: The start time of the waveform.<br />
 channel_name: Seismometer type and component.<br />
 network: The network to which the instrument belongs.<br />
-sta_longitude, stasta_latitude: Etation longitude and latitude.<br />
+sta_longitude, stasta_latitude: Station longitude and latitude.<br />
 ev_longitude, ev_latitude: Event longitude and latitude.<br />
 E_P_idx, N_P_idx, Z_P_idx: P arrival index(calculate) for each component.<br />
 E_shift(s), N_shift(s), Z_shift(s): For each event, align the waveform data by shifting each station's waveform according to the time difference from the earliest start time.<br />
